@@ -1,1 +1,6 @@
 .DS_Store
+Data/raw/books/goodreads_books.json
+Data/raw/books/goodreads_reviews_spoiler.json
+Data/raw/movies/the-movies-dataset
+Data/raw/movies/HuluRaw.csv
+
