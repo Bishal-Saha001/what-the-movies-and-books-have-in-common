@@ -6,4 +6,4 @@ Data/raw/movies/HuluRaw.csv
 Data/interim/books/books_reviews.csv
 Data/interim/books/book1.csv
 Data/interim/books/book2.csv
-
+Data/processed/books/sentiment_patterns_books_reviews.csv
