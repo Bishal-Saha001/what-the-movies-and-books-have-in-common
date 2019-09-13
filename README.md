@@ -1,5 +1,4 @@
-# Perception of literature and cinematography according to NLP: 
-## Movies move you in their space. Books move to yous.
+# Perception of literature and cinematography according to NLP
 
 According to Global English Editing, India, Thailand, and China are the countries with best reading habits in 2018, spending on reading between 8:00 and 10:42 hours per week. The U.S., with **5:42 hours**, is in 22nd position. **37% of American adults** with a high school degree or less and **7% of college graduates** have reported not reading a book in any format in the past year. 
 
@@ -17,9 +16,13 @@ This project tries to find relations between movies and books through genres abl
 
 4. In-Depth Analysis
 - Section 1: Overviews, titles, and keywords of movies are used to predict genres, through cosine similarity between documents by genres. Documents by genre include normalized titles (NLP preprocessing pipeline for deleting **stop-words**, expanding **constractions**, removing special characters, **tokenization** and **lemmatization**), overviews filtered by **Part of Speech** and keywords. Documents by genre are used to build dictionaries and measure the **cosine similarity** between movie overviews and the dictionary of every genre. 
+
 -Section 2: Documents by genre are used un books to get genres as new features. Using genres, number of pages, number of ratings and reviews, a binary classification problem of quality of books (good scores and bad scores) is resolved. Ensemble tree models are used, as **Gradient Boosting**, **Random Forest** and two variations using trees as transformers of features in high dimensional spaces before applying a **Logistic Regression** approach.
+
 -Section 3: *Cinephiles* profiles allow us look for similar users and then, applying a **User Based Collaborative Filtering** algorithm, we predict the score of a determined user decides for a specific movie genre.
+
 -Section 4: Finally, *spacy* library is used to get dates, places and people in description of books and 9 clusters of books, according to the genres labeled, are determined using **PCA** to reduce dimensionality of data and **Agglomerative CLustering**. 
+
 -The step by step of every section could be found in [`depth_analysis`](./depth_analysis)
 
 
